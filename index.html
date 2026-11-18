@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Asheesh Kumar · Full-Stack &amp; AI Engineer</title>
+    <meta
+      name="description"
+      content="Asheesh Kumar: full-stack and AI engineer and open-source contributor to Meshery, PostHog and e2e. Final-year B.Tech IT student, open to internships and full-time roles."
+    />
+    <!-- TODO after deploy: add <link rel="canonical"> and make og:url / og:image absolute with the live domain -->
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1"
+    />
+    <meta name="author" content="Asheesh Kumar" />
+
+    <!-- Social previews (LinkedIn, X, WhatsApp, Slack…) -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Asheesh Kumar" />
+    <meta
+      property="og:title"
+      content="Asheesh Kumar · Full-Stack &amp; AI Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Full-stack and AI engineer building RAG systems, ML dashboards and graph agents. Open-source contributor to Meshery, PostHog and e2e."
+    />
+    <meta property="og:image" content="assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Asheesh Kumar, full-stack and AI engineer"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="profile:first_name" content="Asheesh" />
+    <meta property="profile:last_name" content="Kumar" />
+    <meta property="profile:username" content="Asheesh7298" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Asheesh Kumar · Full-Stack &amp; AI Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Full-stack and AI engineer, open-source contributor to Meshery, PostHog and e2e."
+    />
+    <meta name="twitter:image" content="assets/og-image.png" />
+
+    <!-- Structured data: tells search engines who this page is about -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Asheesh Kumar",
+        "alternateName": ["Asheesh7298"],
+        "image": "assets/og-image.png",
+        "jobTitle": "Full-Stack & AI Engineer",
+        "description": "Full-stack and AI engineer and open-source contributor to Meshery, PostHog and e2e. B.Tech Information Technology student at Galgotias College of Engineering and Technology (2023–2027).",
+        "email": "mailto:asheeshkumarklg712@gmail.com",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Galgotias College of Engineering and Technology"
+        },
+        "knowsAbout": [
+          "Python",
+          "FastAPI",
+          "React",
+          "TypeScript",
+          "Go",
+          "Machine learning",
+          "Retrieval-augmented generation",
+          "AI agents",
+          "TigerGraph",
+          "PostgreSQL",
+          "Open source"
+        ],
+        "sameAs": [
+          "https://github.com/Asheesh7298",
+          "https://www.linkedin.com/in/asheesh712/",
+          "https://leetcode.com/u/KO5Pwip6Ln/"
+        ],
+        "knowsLanguage": ["en", "hi"]
+      }
+    </script>
+
+    <!-- Largest image on screen: fetch it first -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/portrait.webp"
+      imagesrcset="assets/portrait-640.webp 640w, assets/portrait.webp 1000w"
+      imagesizes="(max-width: 900px) min(92vw, 820px), min(48vw, 1000px)"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <script>
+      // Apply the saved theme (or the OS preference) before first paint so there's no flash.
+      (function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("theme");
+        } catch (e) {}
+        if (t !== "light" && t !== "dark")
+          t = matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@500;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@500;800&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@500;800&display=swap"
+    /></noscript>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/icon-48.png" sizes="48x48" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+      <a href="#top" class="pill status"
+        ><span class="dot"></span
+        ><span class="full">Open to New Opportunities</span
+        ><span class="short">Open to work</span></a
+      >
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#open-source">Open Source <sup id="ossCount"></sup></a>
+        <a href="#work">Work <sup>[06]</sup></a>
+        <a href="#experience">Experience <sup>[04]</sup></a>
+        <a href="#beyond">Beyond Code <sup>[03]</sup></a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Switch to dark theme"
+          aria-pressed="false"
+        >
+          <span class="tt-stars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="tt-knob" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <mask id="ttMoon">
+                <rect x="-6" y="-6" width="36" height="36" fill="#fff" />
+                <circle
+                  class="tt-mask"
+                  cx="16.5"
+                  cy="7.5"
+                  r="5.2"
+                  fill="#000"
+                />
+              </mask>
+              <circle
+                class="tt-core"
+                cx="12"
+                cy="12"
+                r="4.6"
+                mask="url(#ttMoon)"
+              />
+              <g class="tt-rays">
+                <line x1="12" y1="1.5" x2="12" y2="3.6" />
+                <line x1="12" y1="20.4" x2="12" y2="22.5" />
+                <line x1="1.5" y1="12" x2="3.6" y2="12" />
+                <line x1="20.4" y1="12" x2="22.5" y2="12" />
+                <line x1="4.6" y1="4.6" x2="6.1" y2="6.1" />
+                <line x1="17.9" y1="17.9" x2="19.4" y2="19.4" />
+                <line x1="4.6" y1="19.4" x2="6.1" y2="17.9" />
+                <line x1="17.9" y1="6.1" x2="19.4" y2="4.6" />
+              </g>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div id="home">
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="top">
+          <h1 class="hero-name" aria-label="Asheesh Kumar">
+            <span class="outline">ASHEESH</span>
+            <span class="solid">KUMAR</span>
+          </h1>
+
+          <div class="hero-portrait">
+            <img
+              src="assets/portrait.webp"
+              srcset="assets/portrait-640.webp 640w, assets/portrait.webp 1000w"
+              sizes="(max-width: 900px) min(92vw, 820px), min(48vw, 1000px)"
+              alt="Asheesh Kumar, full-stack and AI engineer"
+              width="1000"
+              height="1000"
+              fetchpriority="high"
+              decoding="async"
+              onerror="this.remove()"
+            />
+            <div class="monogram" aria-hidden="true">
+              <span>AK</span>
+              <div class="orbit">
+                <i>Python</i><i>FastAPI</i><i>React</i><i>TypeScript</i
+                ><i>Go</i>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-intro">
+            <h2>Full-Stack &amp; AI Engineer<br />Open&#8209;source contributor</h2>
+            <p>
+              I build full-stack and AI products with <strong>Python</strong>,
+              <strong>FastAPI</strong>, <strong>React</strong> and
+              <strong>TypeScript</strong>, from multilingual voice RAG to
+              graph-based fraud agents, and send fixes to open-source projects
+              like <strong>Meshery</strong>, <strong>PostHog</strong> and
+              <strong>e2e</strong>.<br />
+              Final-year B.Tech IT at <strong>GCET</strong>.
+            </p>
+            <a
+              href="mailto:asheeshkumarklg712@gmail.com"
+              class="btn btn-dark"
+              >Let's collaborate <span class="arrow">↗</span></a
+            >
+          </div>
+
+          <ul class="hero-social">
+            <li>
+              <a
+                href="https://github.com/Asheesh7298"
+                target="_blank"
+                rel="noopener"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"
+                  /></svg
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/asheesh712/"
+                target="_blank"
+                rel="noopener"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"
+                  /></svg
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://leetcode.com/u/KO5Pwip6Ln/"
+                target="_blank"
+                rel="noopener"
+                ><svg viewBox="0 0 24 24">
+                  <path
+                    d="M13.48 0a1.37 1.37 0 0 0-.96.44L7.12 6.23 3.26 10.35a5.27 5.27 0 0 0-1.21 2.1 5.35 5.35 0 0 0-.12.52 5.53 5.53 0 0 0 .06 2.36 5.83 5.83 0 0 0 .35 1.02 5.94 5.94 0 0 0 1.27 1.82l4.28 4.19.04.04c2.25 2.17 5.85 2.13 8.06-.07l2.4-2.4a1.38 1.38 0 0 0 0-1.95 1.38 1.38 0 0 0-1.95 0l-2.4 2.39a3.02 3.02 0 0 1-4.2.04l-.02-.02-4.28-4.19a2.86 2.86 0 0 1-.95-2.26 2.68 2.68 0 0 1 .07-.53 2.55 2.55 0 0 1 .62-1.16l3.85-4.13c1.06-1.13 3.2-1.27 4.43-.28l3.5 2.83a1.38 1.38 0 0 0 1.94-.2 1.38 1.38 0 0 0-.21-1.95l-3.5-2.83a6 6 0 0 0-2.77-1.2l2.01-2.16A1.38 1.38 0 0 0 13.48 0Zm-2.86 12.82a1.38 1.38 0 0 0 0 2.76h10.17a1.38 1.38 0 0 0 0-2.76H10.62Z"
+                  /></svg
+                >LeetCode</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!-- ============ STATS STRIP ============ -->
+        <!-- [data-live] numbers here and in Beyond Code are refreshed from GitHub when the open-source list loads (main.js) -->
+        <section class="stats reveal" aria-label="At a glance">
+          <div>
+            <strong data-live="merged">27</strong><span>merged PRs</span>
+            <p>to open-source projects, live from GitHub</p>
+          </div>
+          <div>
+            <strong data-live="repos">5</strong><span>OSS projects</span>
+            <p>contributed to: Meshery, PostHog, e2e, ClickStack, Wagtail</p>
+          </div>
+          <div>
+            <strong>6</strong><span>projects</span>
+            <p>
+              built end to end, 3 with
+              <span class="live"
+                ><span class="dot" aria-hidden="true"></span>live</span
+              >
+              demos
+            </p>
+          </div>
+          <div>
+            <strong>3</strong><span>hackathons</span>
+            <p>and build challenges: Hacker House Goa, Forge 2, Newtonite</p>
+          </div>
+        </section>
+
+        <!-- ============ OPEN SOURCE ============ -->
+        <!-- Pull requests are loaded live from the GitHub API (see "Open source" in main.js) -->
+        <section class="section oss" id="open-source">
+          <div class="section-head row reveal">
+            <span class="ghost" data-parallax>UPSTREAM</span>
+            <h2>/OPEN SOURCE CONTRIBUTIONS</h2>
+            <p class="muted">Pull requests to projects I use · live from GitHub</p>
+          </div>
+          <ol class="pr-list" id="ossList" aria-live="polite"></ol>
+          <div class="oss-more">
+            <a class="btn btn-light" href="#/open-source"
+              >View all contributions <span class="arrow">→</span></a
+            >
+          </div>
+        </section>
+
+        <!-- ============ WORK ============ -->
+        <section class="section work" id="work">
+          <div class="section-head center reveal">
+            <span class="ghost" data-parallax>PORTFOLIO</span>
+            <h2>/SELECTED WORK</h2>
+          </div>
+          <div class="work-bar reveal">
+            <div class="filters" role="group" aria-label="Filter projects">
+              <button class="active" data-filter="all" aria-pressed="true">
+                All
+              </button>
+              <button data-filter="ai" aria-pressed="false">AI / ML</button>
+              <button data-filter="web" aria-pressed="false">Full-Stack</button>
+              <button data-filter="hack" aria-pressed="false">
+                Hackathons
+              </button>
+            </div>
+            <a
+              class="link-arrow"
+              href="https://github.com/Asheesh7298?tab=repositories"
+              target="_blank"
+              rel="noopener"
+              >View All Work ↗</a
+            >
+          </div>
+          <div class="grid" id="grid"></div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section class="section experience" id="experience">
+          <div class="section-head row reveal">
+            <span class="ghost" data-parallax>EXPERIENCE</span>
+            <h2>/EXPERIENCE</h2>
+            <p class="muted">Open source &amp; education</p>
+          </div>
+          <ul class="xp" id="xp"></ul>
+          <div class="xp-preview" id="xpPreview" aria-hidden="true"></div>
+        </section>
+
+        <!-- ============ BEYOND CODE ============ -->
+        <section class="section beyond" id="beyond">
+          <div class="section-head reveal">
+            <span class="ghost" data-parallax>BEYOND</span>
+            <h2>/BEYOND CODE</h2>
+          </div>
+          <div class="beyond-grid">
+            <a
+              class="b-card reveal"
+              href="https://coursera.org/verify/3E4S1OQJTRDY"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="tag">Certification</span>
+              <div class="book">
+                <div class="book-cover">
+                  <small>CERTIFICATE</small><b>Supervised ML</b
+                  ><em>Regression &amp; Classification</em
+                  ><i>DeepLearning.AI · Stanford University</i
+                  ><span>Asheesh Kumar</span>
+                </div>
+              </div>
+              <h3>Supervised Machine Learning: Regression and Classification</h3>
+              <span class="sub">Coursera · DeepLearning.AI &amp; Stanford · Mar 2026</span>
+              <p>
+                Andrew Ng's course in the Machine Learning Specialization:
+                building and training supervised models for prediction and
+                binary classification.
+              </p>
+              <div class="chips">
+                <span>Linear regression</span>
+                <span>Logistic regression</span>
+                <span>Gradient descent</span>
+                <span>Regularization</span>
+                <span>Feature scaling</span>
+              </div>
+              <p class="meta">
+                Verify at coursera.org/verify/3E4S1OQJTRDY · more Google Cloud
+                certificates coming here
+              </p>
+              <span class="btn btn-dark ebook-cta"
+                >Verify certificate <span class="arrow">↗</span></span
+              >
+            </a>
+            <div
+              class="b-card reveal"
+              data-href="https://github.com/Asheesh7298/tigergraph-fraud-agent"
+            >
+              <span class="tag">Hackathons</span>
+              <div class="stage">
+                <div class="mic"></div>
+                <p>“Built under a deadline, judged on what actually runs.”</p>
+              </div>
+              <h3>Hackathons &amp; build challenges</h3>
+              <span class="sub">2026 · India</span>
+              <p>
+                Timed builds where the brief, the data and the judging are
+                someone else's, and the result has to work end to end.
+              </p>
+              <ol class="agenda" aria-label="Hackathons and challenges">
+                <li>TigerGraph × Hacker House Goa 2026: agentic fraud investigation</li>
+                <li>Hacker House Goa 2026 shortlisting: VoxLore and FaceTrace</li>
+                <li>Forge 2 qualifier: a Kanban board built by two AI agents</li>
+                <li>Newtonite Software Engineering Challenge: Operations Under Pressure</li>
+              </ol>
+              <div class="b-links">
+                <a
+                  class="link-arrow"
+                  href="https://github.com/Asheesh7298/tigergraph-fraud-agent"
+                  target="_blank"
+                  rel="noopener"
+                  >Fraud agent ↗</a
+                >
+                <a
+                  class="link-arrow"
+                  href="https://github.com/Asheesh7298/newtonite-ops"
+                  target="_blank"
+                  rel="noopener"
+                  >Newtonite ↗</a
+                >
+              </div>
+            </div>
+            <a class="b-card b-award reveal" href="#/open-source">
+              <span class="award-badge" aria-hidden="true"
+                ><small>Merged</small><b data-live="merged">27</b></span
+              >
+              <span class="award-text">
+                <span class="tag">Open source</span>
+                <h3><span data-live="merged">27</span> merged pull requests across Meshery, PostHog and e2e</h3>
+                <p>
+                  CLI, server, UI and docs fixes in Meshery (a CNCF project),
+                  feature-flag and search fixes in PostHog, and a new locator
+                  matcher in e2e.
+                </p>
+              </span>
+              <span class="link-arrow">View all →</span>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============ PROJECT DETAIL VIEW ============ -->
+      <article class="detail" id="detail" hidden>
+        <div class="detail-top">
+          <a href="#work" class="pill back" id="backBtn">← Back</a>
+          <span class="pill status"
+            ><span class="dot"></span>Open to New Opportunities</span
+          >
+        </div>
+        <div class="detail-body" id="detailBody"></div>
+      </article>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="cta" id="contact">
+        <div class="reveal">
+          <span class="pill status"
+            ><span class="dot"></span>Open to New Opportunities</span
+          >
+          <h2>LET'S BUILD SOMETHING GREAT</h2>
+          <p>
+            I'm a final-year B.Tech IT student open to internships and
+            full-time roles in full-stack and AI engineering. If you're hiring,
+            or just want to talk RAG, agents or open source, I'd love to hear
+            from you.
+          </p>
+          <div class="cta-actions">
+            <a class="btn btn-dark" href="mailto:asheeshkumarklg712@gmail.com"
+              >Contact Me <span class="arrow">↗</span></a
+            >
+            <button
+              class="btn btn-light"
+              id="copyEmail"
+              data-email="asheeshkumarklg712@gmail.com"
+            >
+              Copy email
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <b>Asheesh Kumar</b>
+        <span>Full-Stack &amp; AI Engineer · B.Tech IT, GCET '27</span>
+      </div>
+      <div class="footer-links social">
+        <a href="https://github.com/Asheesh7298" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/asheesh712/"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+        <a
+          href="https://leetcode.com/u/KO5Pwip6Ln/"
+          target="_blank"
+          rel="noopener"
+          >LeetCode</a
+        >
+      </div>
+      <p class="copy">
+        © <span id="year"></span> Asheesh Kumar. Built with care.
+      </p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <!-- Inspector cursor (mouse/trackpad only; enabled from main.js) -->
+    <div class="insp" aria-hidden="true">
+      <div class="insp-blend">
+        <div class="insp-box"></div>
+        <div class="insp-cross"></div>
+      </div>
+      <div class="insp-label"></div>
+    </div>
+    <script src="main.js"></script>
+    <script type="module" src="analytics.js"></script>
+  </body>
+</html>

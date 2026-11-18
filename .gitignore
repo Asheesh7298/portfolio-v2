@@ -1,0 +1,11 @@
+# Secrets / local config (Firebase values come from Vercel env vars at build time)
+.env
+.env.*
+firebase-config.js
+posthog-config.js
+
+# Tooling / OS
+node_modules/
+.vercel/
+.DS_Store
+*.log

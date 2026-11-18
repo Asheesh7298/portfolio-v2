@@ -567,6 +567,7 @@ a.b-card:hover .ebook-cta .arrow { transform: translate(2px, -2px) rotate(45deg)
 .b-card p.meta { flex: none; font-size: 12.5px; color: var(--muted); }
 .book, .stage { height: 170px; border-radius: 12px; display: grid; place-items: center; }
 .book { background: linear-gradient(135deg, var(--bg), var(--line)); perspective: 600px; }
+.book.pair { grid-auto-flow: column; justify-content: center; gap: 28px; } /* two covers side by side */
 .book-cover {
   width: 104px; height: 140px; border-radius: 3px 8px 8px 3px; padding: 12px 10px;
   background: linear-gradient(160deg, #1b1b1b, #3b3b3b); color: #fff; display: flex; flex-direction: column;

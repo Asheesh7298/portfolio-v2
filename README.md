@@ -35,7 +35,7 @@ main.js               Content (PROJECTS, EXPERIENCE) and rendering; open-source 
 analytics.js          Optional Firebase + PostHog loader and event tracking
 scripts/
   build-config.mjs    Writes firebase-config.js and posthog-config.js from environment variables
-assets/               Portrait, project screenshots (WebP), icons, Open Graph image, certificates
+assets/               Portrait, project screenshots (WebP), icons, Open Graph image
 docs/screenshots/     Screenshots used in this README
 vercel.json           Build command and cache headers
 ```

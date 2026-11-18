@@ -279,7 +279,7 @@ const EXPERIENCE = [
     metric: ["7th", "semester, final year"],
     points: [
       "Final year (7th semester) of a B.Tech in Information Technology.",
-      "Supervised Machine Learning certificate from DeepLearning.AI and Stanford (Coursera).",
+      "Certificates: Supervised Machine Learning (DeepLearning.AI and Stanford, Coursera) and MLOps with Vertex AI: Model Evaluation (Google Cloud).",
       "Before GCET: Intermediate (PCM) and High School at City Public Inter College, Roorkee.",
     ],
     chips: ["C++", "Python", "JavaScript", "DSA", "OOP", "MySQL"],

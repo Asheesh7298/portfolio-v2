@@ -2,6 +2,8 @@
 
 Personal portfolio of **Asheesh Kumar** ([@Asheesh7298](https://github.com/Asheesh7298)): full-stack and AI engineer, open-source contributor to Meshery, PostHog and e2e, and final-year B.Tech IT student at GCET (2023–2027).
 
+**Live:** [asheesh7298.vercel.app](https://asheesh7298.vercel.app/)
+
 A static site: plain HTML, CSS and JavaScript with no framework and no build step for the page itself. It has light and dark themes, project pages, live open-source data from GitHub, scroll animations and an inspector-style cursor.
 
 | Light | Dark |
@@ -69,7 +71,7 @@ Analytics stay off unless their config files exist, so the two 404s for `firebas
 
 ## Deployment
 
-Made for [Vercel](https://vercel.com): `vercel.json` runs `node scripts/build-config.mjs` as the build command, serves the repo root as the site, and sets cache headers for assets, CSS and JS. Once the site has its domain, add a canonical link, make `og:image` absolute in `index.html`, and add a sitemap.
+Made for [Vercel](https://vercel.com): `vercel.json` runs `node scripts/build-config.mjs` as the build command, serves the repo root as the site, and sets cache headers for assets, CSS and JS. The Vercel project is connected to this repo, so every merge to `main` deploys to production at https://asheesh7298.vercel.app/. If the address changes, update the canonical link and the `og:` / `twitter:` image URLs in `index.html`, plus `sitemap.xml` and `robots.txt`.
 
 ## Contact
 

@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://asheesh7298.vercel.app/sitemap.xml

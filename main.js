@@ -16,7 +16,7 @@ const PROJECTS = [
     title: "VoxLore — Multilingual Voice RAG",
     kind: "AI Web App",
     filter: ["ai", "web", "hack"],
-    badges: ["Hackathon", "Open Source"],
+    badges: ["Personal Project", "Open Source"],
     tags: ["AI / RAG", "Hindi · Marathi · English"],
     summary:
       "A voice question-answering system: speak or type a question in Hindi, Marathi or English and get an answer extracted from retrieved passages (no text generation), searched across 13,020,220 passage vectors held in GPU memory on an NVIDIA A100. Built for the Hacker House Goa 2026 shortlisting.",
@@ -60,7 +60,7 @@ const PROJECTS = [
     title: "Agentic Fraud Investigation on TigerGraph",
     kind: "AI Agent",
     filter: ["ai", "hack"],
-    badges: ["Hackathon", "Open Source"],
+    badges: ["Personal Project", "Open Source"],
     tags: ["AI Agent", "TigerGraph", "Hacker House Goa 2026"],
     summary:
       "An AI agent that investigates card-fraud alerts on a TigerGraph knowledge graph: it decides what kind of fraud each alert is (if any), how far it reaches and what the bank should do next, including when to gather more evidence before deciding. Built for the TigerGraph × Hacker House Goa 2026 challenge on the IEEE-CIS dataset.",
@@ -158,7 +158,7 @@ const PROJECTS = [
     title: "AI Crop Recommendation with IoT",
     kind: "ML + IoT",
     filter: ["ai"],
-    badges: ["Team Project"],
+    badges: ["Final-Year Project", "Open Source"],
     tags: ["Machine Learning", "IoT", "FastAPI"],
     summary:
       "A soil-to-harvest decision engine: soil-fertility assessment, crop recommendation with sowing-time guidance, a real-world cultivation cross-check, profitability and fertilizer optimization, and a SHAP explanation for every call. IoT-ready by design: an ESP32 field-sensor node posts to the same endpoint the web app uses.",
@@ -169,62 +169,37 @@ const PROJECTS = [
       "Kharif / Rabi / Zaid-aware sowing-time advice, plus irrigation and crop-rotation suggestions",
       "ESP32 firmware, a device simulator and a live-sensor dashboard mode",
     ],
-    role: "Team project",
+    role: "Final-year project, with Aditya Chaudhary",
     stack: "Python, FastAPI, scikit-learn, XGBoost, SHAP, ESP32 (C++)",
-    links: [{ label: "View Code", href: GH + "AI-crop-Recommendation", primary: true }],
-    mock: "dash",
+    links: [
+      { label: "View Code", href: GH + "AI-crop-Recommendation" },
+      { label: "Live Demo", href: "https://crop-recommendation-ai-pf0b.onrender.com/", primary: true },
+    ],
+    preview: {
+      slides: [
+        {
+          xl: "assets/crop-xl-01.webp",
+          sm: "assets/crop-sm-01.webp",
+          alt: "Crop Recommendation AI: from a soil sample to a season-aware planting decision, with Random Forest at 99.6% CV accuracy",
+        },
+        {
+          xl: "assets/crop-xl-02.webp",
+          sm: "assets/crop-sm-02.webp",
+          alt: "Field report recommending rice at 96%, with a real-world check against Government of India cultivation data and sowing-time advice",
+        },
+        {
+          xl: "assets/crop-xl-03.webp",
+          sm: "assets/crop-sm-03.webp",
+          alt: "Soil fertility by nitrogen, phosphorus, potassium and pH, a Parker's Nutrient Index of 2.33, and profitability per hectare",
+        },
+        {
+          xl: "assets/crop-xl-04.webp",
+          sm: "assets/crop-sm-04.webp",
+          alt: "Why this crop: SHAP contributions of rainfall, nitrogen, humidity, potassium, temperature, phosphorus and pH",
+        },
+      ],
+    },
     accent: "#16a34a",
-  },
-  {
-    slug: "operations-under-pressure",
-    title: "Operations Under Pressure",
-    kind: "Full-Stack Web App",
-    filter: ["web", "hack"],
-    badges: ["Challenge", "Open Source"],
-    tags: ["Web App", "Node.js", "PostgreSQL"],
-    summary:
-      "An internal web app for creating, assigning, tracking and resolving operational work items across teams: incidents, customer issues, payments, compliance and tasks. Built for the Newtonite Software Engineering Challenge, with a backend that stays correct under concurrency.",
-    highlights: [
-      "A server-enforced workflow with a Lead-only approval step and per-team roles (Admin, Lead, Member, Viewer)",
-      "Stays correct when two people claim the same item, edit stale data, double-click or retry a request",
-      "An append-only activity log of every change",
-      "A background worker for notification jobs",
-      "One command to run: docker compose up seeds 4 teams, 10 users and 5,000 work items",
-      "Raw SQL on PostgreSQL 16 with zod validation, tested with Vitest and Supertest",
-    ],
-    role: "Design & Development",
-    stack: "Node.js 22, TypeScript, Express, PostgreSQL 16, zod, Vitest, Docker",
-    links: [{ label: "View Code", href: GH + "newtonite-ops", primary: true }],
-    mock: "term",
-    term: `<span class="g">$</span> docker compose up --build
-<span class="d">─────────────────────────────</span>
-  migrate   applied 001_init.sql
-  seed      4 teams · 10 users
-  seed      5,000 work items
-  worker    notifications ready
-  <span class="d">web</span>       localhost:3000`,
-    accent: "#0ea5e9",
-  },
-  {
-    slug: "forge2-kanban",
-    title: "Forge 2 Kanban — Built by Two AI Agents",
-    kind: "Web App",
-    filter: ["web", "ai", "hack"],
-    badges: ["Challenge", "Open Source"],
-    tags: ["Web App", "Laravel", "AI Agents"],
-    summary:
-      "A Trello-style Kanban board, with a Laravel API on SQLite and a React (Vite) frontend, built for the Forge 2 qualifier by a two-agent system orchestrated through Slack: Hermes plans and remembers, OpenClaw writes the code.",
-    highlights: [
-      "Hermes (the brain) on Gemini 2.5 Flash: planning, memory, skills and cron",
-      "OpenClaw (the hands) on Groq gpt-oss-120b, with a local Ollama qwen2.5-coder fallback",
-      "Agents coordinated through Slack",
-      "Laravel REST API with SQLite migrations and a React + Vite frontend",
-    ],
-    role: "Design & Development",
-    stack: "Laravel, PHP, SQLite, React, Vite, Slack, Gemini, Groq",
-    links: [{ label: "View Code", href: GH + "forge2-qualifier", primary: true }],
-    mock: "dash",
-    accent: "#f97316",
   },
 ];
 
@@ -300,7 +275,7 @@ const esc = (s) =>
 // One image renders statically; several become a slideshow (see initSlideshows).
 // Intrinsic widths of images that have smaller -640/-1200 variants (made at build time),
 // so the browser can download the size it actually displays.
-const IMG_W = {"voxlore-xl-01.webp": 2256, "voxlore-xl-02.webp": 2256, "voxlore-xl-03.webp": 2256, "fraud-xl-01.webp": 2256, "fraud-xl-02.webp": 2256, "fraud-xl-03.webp": 2256, "fraud-xl-04.webp": 2256, "churn-xl-01.webp": 2256, "churn-xl-02.webp": 2256, "churn-xl-03.webp": 2256, "churn-xl-04.webp": 2256, "portrait.webp": 1000};
+const IMG_W = {"voxlore-xl-01.webp": 2256, "voxlore-xl-02.webp": 2256, "voxlore-xl-03.webp": 2256, "fraud-xl-01.webp": 2256, "fraud-xl-02.webp": 2256, "fraud-xl-03.webp": 2256, "fraud-xl-04.webp": 2256, "churn-xl-01.webp": 2256, "churn-xl-02.webp": 2256, "churn-xl-03.webp": 2256, "churn-xl-04.webp": 2256, "crop-xl-01.webp": 2256, "crop-xl-02.webp": 2256, "crop-xl-03.webp": 2256, "crop-xl-04.webp": 2256, "portrait.webp": 1000};
 function srcset(path) {
   const w = IMG_W[path.split("/").pop()];
   if (!w) return "";

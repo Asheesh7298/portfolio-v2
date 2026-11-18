@@ -15,7 +15,7 @@ A static site: plain HTML, CSS and JavaScript with no framework and no build ste
 - **Hero.** Name, title, a short intro, a contact button and links to GitHub, LinkedIn and LeetCode.
 - **At a glance.** Merged PRs, open-source projects, projects built and hackathons. The first two numbers update from GitHub when the open-source list loads.
 - **Open source.** My pull requests to other people's repositories, loaded live from the GitHub API, latest first. `#/open-source` lists all of them, and each PR has its own page (`#/open-source/<owner>/<repo>/<number>`) with its status, who merged it, the description and the files changed. Responses are cached in `sessionStorage` for 15 minutes.
-- **Selected work.** Six projects, filterable by AI / ML, Full-Stack and Hackathons. Each card opens a project page (`#/work/<slug>`) with screenshots, the stack, highlights and links.
+- **Selected work.** Four projects, filterable by AI / ML, Full-Stack and Hackathons. Each card opens a project page (`#/work/<slug>`) with screenshots, the stack, highlights and links.
 - **Experience.** Open-source work (Meshery, PostHog, e2e) and education. Rows expand; on desktop, hovering a row shows a metric.
 - **Beyond code.** Certifications, hackathons and an open-source summary.
 - **Contact.**

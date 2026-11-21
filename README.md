@@ -55,7 +55,7 @@ Project screenshots follow the same sizes as the rest of `assets/`: desktop `*-x
 
 ## Run locally
 
-Any static file server works:
+Any static file server works
 
 ```sh
 python -m http.server 8080
@@ -73,7 +73,7 @@ Analytics stay off unless their config files exist, so the two 404s for `firebas
 
 Made for [Vercel](https://vercel.com): `vercel.json` runs `node scripts/build-config.mjs` as the build command, serves the repo root as the site, and sets cache headers for assets, CSS and JS. The Vercel project is connected to this repo, so every merge to `main` deploys to production at https://asheesh7298.vercel.app/. If the address changes, update the canonical link and the `og:` / `twitter:` image URLs in `index.html`, plus `sitemap.xml` and `robots.txt`.
 
-## Contact
+## Contacts
 
 - Email: [asheeshkumarklg712@gmail.com](mailto:asheeshkumarklg712@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/asheesh712/) · [GitHub](https://github.com/Asheesh7298) · [LeetCode](https://leetcode.com/u/KO5Pwip6Ln/)
